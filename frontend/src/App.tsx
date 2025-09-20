@@ -17,6 +17,20 @@ import { OTP } from "./pages/auth/OTP";
 import { Dashboard } from "./pages/Dashboard";
 import { ManufacturingOrders } from "./pages/ManufacturingOrders";
 import { WorkOrders } from "./pages/WorkOrders";
+import { WorkCenters } from "./pages/WorkCenters";
+import { WorkCenterNew } from "./pages/WorkCenterNew";
+import { WorkCenterDetails } from "./pages/WorkCenterDetails";
+import { WorkCenterEdit } from "./pages/WorkCenterEdit";
+import { Stock } from "./pages/Stock";
+import { ProductMaster } from "./pages/ProductMaster";
+import { StockMovements } from "./pages/StockMovements";
+import { BOMList } from "./pages/BOMList";
+import { BOMNew } from "./pages/BOMNew";
+import { BOMDetails } from "./pages/BOMDetails";
+import { BOMEdit } from "./pages/BOMEdit";
+import { ManufacturingOrderNew } from "./pages/ManufacturingOrderNew";
+import { ManufacturingOrderDetails } from "./pages/ManufacturingOrderDetails";
+import { ManufacturingOrderEdit } from "./pages/ManufacturingOrderEdit";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -56,8 +70,9 @@ const App = () => {
               
               {/* Manufacturing routes */}
               <Route path="manufacturing-orders" element={<ManufacturingOrders />} />
-              <Route path="manufacturing-orders/new" element={<div>New Manufacturing Order (Coming Soon)</div>} />
-              <Route path="manufacturing-orders/:id" element={<div>Manufacturing Order Details (Coming Soon)</div>} />
+              <Route path="manufacturing-orders/new" element={<ManufacturingOrderNew />} />
+              <Route path="manufacturing-orders/:id" element={<ManufacturingOrderDetails />} />
+              <Route path="manufacturing-orders/:id/edit" element={<ManufacturingOrderEdit />} />
               
               {/* Work Order routes */}
               <Route path="work-orders" element={<WorkOrders />} />
@@ -65,19 +80,26 @@ const App = () => {
               <Route path="work-orders/:id" element={<div>Work Order Details (Coming Soon)</div>} />
               
               {/* Work Center routes */}
-              <Route path="work-centers" element={<div>Work Centers (Coming Soon)</div>} />
-              <Route path="work-centers/new" element={<div>New Work Center (Coming Soon)</div>} />
-              <Route path="work-centers/:id" element={<div>Work Center Details (Coming Soon)</div>} />
+              <Route path="work-centers" element={<WorkCenters />} />
+              <Route path="work-centers/new" element={<WorkCenterNew />} />
+              <Route path="work-centers/:id" element={<WorkCenterDetails />} />
+              <Route path="work-centers/:id/edit" element={<WorkCenterEdit />} />
               
               {/* Stock routes */}
-              <Route path="stock" element={<div>Stock Ledger (Coming Soon)</div>} />
-              <Route path="stock/products" element={<div>Product Master (Coming Soon)</div>} />
-              <Route path="stock/movements" element={<div>Stock Movements (Coming Soon)</div>} />
+              <Route path="stock" element={<Stock />} />
+              <Route path="stock/products" element={<ProductMaster />} />
+              <Route path="stock/movements" element={<StockMovements />} />
+              <Route path="stock/products/new" element={<div>New Product (Coming Soon)</div>} />
+              <Route path="stock/products/:id" element={<div>Product Details (Coming Soon)</div>} />
+              <Route path="stock/products/:id/edit" element={<div>Edit Product (Coming Soon)</div>} />
+              <Route path="stock/movements/new" element={<div>New Movement (Coming Soon)</div>} />
+              <Route path="stock/movements/:id" element={<div>Movement Details (Coming Soon)</div>} />
               
               {/* BOM routes */}
-              <Route path="bom" element={<div>BOM List (Coming Soon)</div>} />
-              <Route path="bom/new" element={<div>New BOM (Coming Soon)</div>} />
-              <Route path="bom/:id" element={<div>BOM Details (Coming Soon)</div>} />
+              <Route path="bom" element={<BOMList />} />
+              <Route path="bom/new" element={<BOMNew />} />
+              <Route path="bom/:id" element={<BOMDetails />} />
+              <Route path="bom/:id/edit" element={<BOMEdit />} />
               
               {/* Profile routes */}
               <Route path="me" element={<div>My Profile (Coming Soon)</div>} />

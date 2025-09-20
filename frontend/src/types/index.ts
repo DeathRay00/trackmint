@@ -210,3 +210,23 @@ export interface CreateWorkOrderForm {
   plannedDuration: number;
   comments?: string;
 }
+
+export interface CreateWorkCenterForm {
+  name: string;
+  code: string;
+  capacity: number;
+  costPerHour: number;
+  efficiency: number;
+  description?: string;
+  isActive: boolean;
+}
+
+export interface UpdateWorkCenterForm {
+  name?: string;
+  code?: string;
+  capacity?: number;
+  costPerHour?: number;
+  efficiency?: number;
+  description?: string;
+  isActive?: boolean;
+}

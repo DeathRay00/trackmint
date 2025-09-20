@@ -1,0 +1,36 @@
+# Ignore node_modules and environment files
+node_modules/
+.env
+.env.*
+# Ignore log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+# Ignore build output
+dist/
+build/
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+# Ignore database files
+*.sqlite
+*.db
+# Ignore zip and backup files
+*.zip
+*.bak
+# Ignore lock files
+package-lock.json
+yarn.lock
+bun.lockb
+# Ignore coverage
+coverage/
+# Ignore frontend build artifacts
+mock2/trackmint/frontend/dist/
+mock2/trackmint/frontend/build/
+# Ignore backend generated files
+mock2/trackmint/backend/*.pyc
+mock2/trackmint/backend/__pycache__/
