@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     # Database
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL", 
-        "postgresql://postgres:12345@localhost:5432/trackmint_db"
+        "sqlite:///./trackmint.db"
     )
     
     # CORS
