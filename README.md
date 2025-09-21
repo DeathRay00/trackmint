@@ -2,6 +2,8 @@
 
 A comprehensive, full-stack Manufacturing Management System built with modern technologies. Trackmint provides end-to-end manufacturing order tracking, work order management, BOM handling, inventory control, and real-time production monitoring.
 
+Video Link :- https://drive.google.com/file/d/1JPoHYnYhVxtHrOngK6cQZerhb_AvZ2mQ/view?usp=sharing
+
 ## 🏭 Overview
 
 Trackmint is designed to streamline manufacturing operations by providing:
